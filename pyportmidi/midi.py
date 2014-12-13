@@ -44,7 +44,7 @@ def init():
     global _init, _pypm
     if not _init:
         import pyportmidi._pyportmidi
-        _pypm = PyPortMidi._pyportmidi
+        _pypm = pyportmidi._pyportmidi
 
         _pypm.Initialize()
         _init = True

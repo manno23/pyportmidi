@@ -62,8 +62,8 @@ else:
         ext_modules=[
             Extension("pyportmidi._pyportmidi",
                       [os.path.join("pyportmidi", "_pyportmidi.c")],
-                      library_dirs=[os.path.join("pyportmidi", "linux")],
-                      include_dirs=[os.path.join("pyportmidi", "includes")],
+                      library_dirs=["linux"],
+                      include_dirs=["includes"],
                       libraries=["portmidi", "asound", "pthread"])
         ]
     )
